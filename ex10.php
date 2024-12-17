@@ -26,13 +26,12 @@
     664485013 นายศิวกร แก้วมีมาก <br>
     หมู่เรียน 66/96
     
-    <form action="ex10.php" method="POST">
-        กว้าง: <input type="text" name="w"> เมตร
-        ยาว: <input type="text" name="h"> เมตร
-        หนา: <input type="text" name="a"> เซนติเมตร
-        <input type="submit" value="กด">
-
-
-    </form>
+    <?php
+    $กว้าง = $_POST["w"];
+    $ยาว = $_POST["h"];
+    $หนา = $_POST["a"];
+    $z = $กว้าง*$ยาว*$หนา*0.01;
+    echo "<br>ค่าเท่ากับ" .$z;
+    ?>
 </body>
 </html>
