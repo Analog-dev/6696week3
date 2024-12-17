@@ -22,24 +22,16 @@
     <title>ตัวอย่าง 1</title>
 </head>
 <body>
-    <h1>โปรแกรม ภาษา PHP </h1>
+    <h1>โปรแกรม ภาษา php สร้างฟอร์มรับข้อมูล method post </h1>
     664485013 นายศิวกร แก้วมีมาก <br>
     หมู่เรียน 66/96
+    
+    <form action="ex8.php" method="POST">
+        กว้าง: <input type="text" name="w">
+        ยาว: <input type="text" name="h">
+        <input type="submit" value="กดส่งข้อมูล">
 
-    <?php
-        echo "<h2>สวัสดีปีใหม่</h2>";
-        echo "<br>ขอให้ทุกคนมีความสุข";
-        $name="ศิวกร";
-        $surname="แก้วมีมาก";
-        echo "<br>ชื่อของคุณคือ".$name." ".$surname;
-        $x=15;
-        $y=7;
-        $z=$x+$y;
-        echo "<br>ค่าผลบวกเท่ากับ".$z;
-        $x=15;
-        $y=7;
-        $z=$x*$y;
-        echo "<br>ค่าผลคูณเท่ากับ".$z;
-    ?>
+
+    </form>
 </body>
 </html>
